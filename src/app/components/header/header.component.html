@@ -1,0 +1,14 @@
+<div class="container flex p1">
+  <h1>My First Angular App</h1>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button routerLink="/" mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button routerLink="/add" mat-menu-item>
+      <mat-icon>add</mat-icon>
+      <span>Add</span>
+    </button>
+  </mat-menu>
+</div>

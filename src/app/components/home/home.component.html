@@ -1,0 +1,9 @@
+<div class="container p1">
+  <h2>Items:</h2>
+
+  <app-item
+    *ngFor="let item of items"
+    [item]="item"
+    (onDeleteItem)="deleteItem(item)"
+  ></app-item>
+</div>
