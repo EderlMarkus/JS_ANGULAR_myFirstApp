@@ -1,6 +1,11 @@
 <div class="container flex p1">
   <h1>My First Angular App</h1>
-  <button mat-raised-button color="accent" [matMenuTriggerFor]="menu">
+  <button
+    mat-raised-button
+    color="accent"
+    [matMenuTriggerFor]="menu"
+    data-testid="menu"
+  >
     <mat-icon>menu</mat-icon> Menu
   </button>
 
@@ -9,7 +14,7 @@
       <mat-icon>home</mat-icon>
       <span>Home</span>
     </button>
-    <button routerLink="/add" mat-menu-item>
+    <button data-testid="add" routerLink="/add" mat-menu-item>
       <mat-icon>add</mat-icon>
       <span>Add</span>
     </button>
